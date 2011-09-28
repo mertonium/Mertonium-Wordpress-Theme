@@ -753,3 +753,19 @@ ul.related-post-ul { width: 670px; }
 .postmetaoptions li span { font-weight: bold; }
 
 .download-div { margin-bottom: 1.5em; }
+
+/*** Homepage ***/
+h2.hp-heading {
+  font-size: 1.8em;
+}
+
+h2.hp-section {
+  background: #8F8F8F;
+  color: #FFF;
+  padding-left: 18px;
+  margin-bottom: 0.5em;
+}
+
+.section-wrapper {
+  margin-bottom: 1.5em;
+}
