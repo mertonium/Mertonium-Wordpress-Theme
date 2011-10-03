@@ -33,9 +33,9 @@ Template Name: Homepage Showcase
             foreach($tools as $post ) :
                 setup_postdata($post);
 
-                $last = ($counter % 3 == 2) ? ' last' : '';
+                $last = ($counter % 4 === 3) ? ' last' : '';
                 $counter++;
-                $the_classes = get_post_class('hp-block span-8'.$last);
+                $the_classes = get_post_class('hp-block span-6'.$last);
                 $the_classes = implode(' ',$the_classes);
         ?>
             <div class="<?php print_r($the_classes); ?>" id="post-<?php the_ID(); ?>">
@@ -44,7 +44,7 @@ Template Name: Homepage Showcase
                     if (function_exists('has_post_thumbnail')) {
                         if (has_post_thumbnail()) {
                 ?>
-                            <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(array(300,300), array('class' => 'size-small')); ?></a>
+                            <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(array(230,230), array('class' => 'size-small')); ?></a>
                 <?php
                         } else {
                             the_content('{Jump to the rest of &quot;'.get_the_title().'&quot;}');
@@ -52,6 +52,7 @@ Template Name: Homepage Showcase
                     }
                 ?>
             </div>
+            <?php if($last != ''){ echo '<br style="clear:both;" />'; } ?>
         <?php endforeach; ?>
         </div>
 
@@ -64,7 +65,7 @@ Template Name: Homepage Showcase
 
                 $last = ($counter % 3 == 2) ? ' last' : '';
                 $counter++;
-                $the_classes = get_post_class('hp-block span-8'.$last);
+                $the_classes = get_post_class('hp-block span-6'.$last);
                 $the_classes = implode(' ',$the_classes);
         ?>
             <div class="<?php print_r($the_classes); ?>" id="post-<?php the_ID(); ?>">
@@ -73,7 +74,7 @@ Template Name: Homepage Showcase
                     if (function_exists('has_post_thumbnail')) {
                         if (has_post_thumbnail()) {
                 ?>
-                            <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(array(300,300), array('class' => 'size-small')); ?></a>
+                            <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(array(230,230), array('class' => 'size-small')); ?></a>
                 <?php
                         } else {
                             the_content('{Jump to the rest of &quot;'.get_the_title().'&quot;}');
@@ -81,6 +82,7 @@ Template Name: Homepage Showcase
                     }
                 ?>
             </div>
+            <?php if($last != ''){ echo '<br style="clear:both;" />'; } ?>
         <?php endforeach; ?>
         </div>
 

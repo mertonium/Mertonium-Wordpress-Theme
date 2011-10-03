@@ -755,8 +755,9 @@ ul.related-post-ul { width: 670px; }
 .download-div { margin-bottom: 1.5em; }
 
 /*** Homepage ***/
-h2.hp-heading {
-  font-size: 1.8em;
+.hp-heading {
+  font-size: 1.2em;
+  margin-bottom: 0;
 }
 
 h2.hp-section {
