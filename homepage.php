@@ -7,6 +7,7 @@ Template Name: Homepage Showcase
     $params = array(
         'meta_key' => 'showcase',
         'meta_value' => 'tool',
+        'numberposts' => -1,
         'post_type' => array('page','post')
     );
     $tools = get_posts($params);
@@ -27,7 +28,7 @@ Template Name: Homepage Showcase
     </div>
     <?php if (count($tools) > 0) : ?>
         <div class="span-24 last section-wrapper" role="main">
-            <h2 class="hp-section">Tools</h2>
+            <h2 class="hp-section">Projects</h2>
         <?php
             $counter = 0;
             foreach($tools as $post ) :
