@@ -15,7 +15,7 @@ Tags: fixed width, two column, blog, photo centric, minimal,
 /* Begin Typography & Colors */
 body {
 	font-size: 14px; /* Resets 1em to 10px */
-	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-family: "Georgia","Times",serif; /*'Lucida Grande', Verdana, Arial, Sans-Serif;*/
 	background-color: #ffffff;
 	color: #333;
 	text-align: center;
@@ -755,9 +755,21 @@ ul.related-post-ul { width: 670px; }
 .download-div { margin-bottom: 1.5em; }
 
 /*** Homepage ***/
+.hp-block {
+  height: 175px;
+  overflow:hidden;
+}
 .hp-heading {
   font-size: 1.2em;
   margin-bottom: 0;
+  background-color: #dddddd;
+}
+
+#the_page a.hp-title-link {
+  font-family: "Helvetica", "san-serif";
+  color: #CF1313;
+  font-style: italic;
+  padding-left: 3px;
 }
 
 h2.hp-section {
